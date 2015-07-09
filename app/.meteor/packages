@@ -7,3 +7,7 @@
 meteor-platform
 insecure
 iron:router
+momentjs:moment
+aldeed:collection2
+underscore
+jquery
