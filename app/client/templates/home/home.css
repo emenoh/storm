@@ -3,3 +3,16 @@
 /*****************************************************************************/
 .home {
 }
+
+.canvas {
+	height: 1200px;
+	width: 960px;
+	border: 1px solid #CCC;
+	position: relative;
+}
+.div {
+	height: 200px;
+	width: 200px;
+	border: 1px solid #999;
+	background: #EFEFEF;
+}
