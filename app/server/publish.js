@@ -9,6 +9,6 @@ Meteor.publish('elements', function (/* args */) {
   return Elements.find();
 });
 
-Meteor.publish('pages', function (/* args */) {
-  return Pages.find();
+Meteor.publish('rooms', function (/* args */) {
+  return Rooms.find();
 });

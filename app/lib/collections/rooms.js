@@ -1,8 +1,8 @@
-Pages = new Mongo.Collection('pages');
+Rooms = new Mongo.Collection('rooms');
 
 
 if (Meteor.isServer) {
-  Pages.allow({
+  Rooms.allow({
     insert: function (userId, doc) {
       return true;
     },
@@ -16,7 +16,7 @@ if (Meteor.isServer) {
     }
   });
 
-  Pages.deny({
+  Rooms.deny({
     insert: function (userId, doc) {
       return false;
     },
