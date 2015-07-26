@@ -7,7 +7,7 @@ Template.Home.events({
 		var title = 'new page'
 		var x = 10
 		var y = 10
-		var r = Meteor.storm.getCurrentRoom()
+		var r = Session.get('currentRoom');
 		Elements.insert({'room': r, 'title': title, 'type': 'div', 'x': x, 'y': y})
 
 		$('.canvas').append('<div class="div selectable draggable resizable" id="'+newId+'" style="top:'+x+'; left:'+y+';">hello</div>')
@@ -35,11 +35,9 @@ Template.Home.created = function () {
 
 Template.Home.rendered = function () {
 
-	var $canvas = $('.canvas');
-	var currentRoom = Meteor.storm.getCurrentRoom();
-	var els = Elements.find({'room': currentRoom}).fetch();
-	console.log('els: ', els);
-
+	var $canvas = $('.canvas')
+	var els = Elements.find({'room': Session.get('currentRoom')}).fetch()
+	console.log('els', els)
 
 };
 

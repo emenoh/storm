@@ -1,12 +1,17 @@
 <template name="Home">
+
+{{#if currentUser}}
   <h1>Storing dom elements in Mongo experiment.</h1>
+
 
 <button class="addDiv">+ div</button><button class="addDiv">+ button</button>
 
 <div class="canvas">
 
 
-
 </div>
+{{else}}
+please log in
+{{/if}}
 
 </template>

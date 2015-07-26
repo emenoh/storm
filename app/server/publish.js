@@ -12,3 +12,12 @@ Meteor.publish('elements', function (/* args */) {
 Meteor.publish('rooms', function (/* args */) {
   return Rooms.find();
 });
+
+Meteor.publish("userData", function () {
+  if (this.userId) {
+    return Meteor.users.find({_id: this.userId},
+                             {fields: {'currentRoom': 1}});
+  } else {
+    this.ready();
+  }
+});
