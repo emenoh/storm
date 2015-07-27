@@ -1,5 +1,5 @@
 <template name="MasterLayout">
 <div class="utilityNav">{{> loginButtons align="right"}}</div>
   {{> yield}}
-<div class="footer"><input type="text" name="mainIO" class="mainIO" /></div>
+<div class="footer"><form name="mainIO" method="post"><div class="inputPadding"><input type="text" name="mainIO" class="mainIO" /></div></form></div>
 </template>

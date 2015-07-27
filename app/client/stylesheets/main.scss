@@ -1,6 +1,10 @@
 /*****************************************************************************/
 /* main: Style */
 /*****************************************************************************/
+html, body {
+padding: 0; margin: 0;
+}
+
 .main {
 }
 
@@ -39,9 +43,17 @@ padding: 10px;
     left: 0px;
     right: 0px;
 
-    input {
-      padding: 10px;
-      font-size: 14px;
-      width: 100%;
+    .inputPadding {
+      position: absolute;
+      top: 5px;
+      left: 5px;
+      right: 10px;
+
+      input {
+        font-size: 14px;
+        height: 35px;
+        line-height: 35px;
+        width: 100%;
+      }
     }
 }
