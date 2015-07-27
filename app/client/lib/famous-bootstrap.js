@@ -11,6 +11,7 @@ Meteor.startup(function(){
   Famous.Camera = famous.components.Camera
   Famous.Curves = famous.transitions.Curves
   Famous.Node = famous.core.Node
+  Famous.GestureHandler = famous.components.GestureHandler
   Famous.Position = famous.components.Position
   Famous.Rotation = famous.components.Rotation
   Famous.Gravity3D = famous.physics.Gravity3D
@@ -22,5 +23,5 @@ Meteor.startup(function(){
   Famous.Mesh = famous.webglRenderables.Mesh
   Famous.Color = famous.utilities.Color
   Famous.Circle = famous.webglGeometries.Circle
-  
+
 })
