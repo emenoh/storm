@@ -1,5 +1,20 @@
 <template name="MasterLayout">
 <div class="utilityNav">{{> loginButtons align="right"}}</div>
+
+{{#if currentUser}}
+
   {{> yield}}
-<div class="footer"><form name="mainIO" method="post"><div class="inputPadding"><input type="text" name="mainIO" class="mainIO" /></div></form></div>
+
+  <div class="mainIOResponse">{{mainIOResponse}}</div>
+  <div class="footer">
+  <form name="mainIOForm" method="post"><div class="inputPadding"><input type="text" name="mainIO" class="mainIO" /></div></form></div>
+
+{{else}}
+please log in
+{{/if}}
+
+
+
+
+
 </template>

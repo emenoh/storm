@@ -2,19 +2,7 @@
 /* Home: Event Handlers */
 /*****************************************************************************/
 Template.Home.events({
-	'click .addDiv': function(){
-		var newId = 'el_'+Random.id()
-		var title = 'new page'
-		var x = 10
-		var y = 10
-		var r = Session.get('currentRoom');
-		Elements.insert({'room': r, 'title': title, 'type': 'div', 'x': x, 'y': y})
 
-		$('.canvas').append('<div class="div selectable draggable resizable" id="'+newId+'" style="top:'+x+'; left:'+y+';">hello</div>')
-	},
-	'click .selectable': function(){
-		console.log('clicked a selectable div')
-	}
 
 });
 
@@ -49,10 +37,6 @@ headerNode
 .classes = ['headerNode']
 contentNode
 .classes = ['contentNode']
-footerNode
-.classes = ['footerNode']
-
-
 
  
  

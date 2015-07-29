@@ -35,6 +35,18 @@ padding: 10px;
   user-select: none;          /* Likely future */  
 }
 
+.mainIOResponse {
+    height: 100px;
+    background: rgba(0,0,0,0.4);
+    padding: 20px;
+    width: 400px;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    color: rgb(255,255,255);
+}
+
 .footer {
     height: 50px;
     background: #000;
